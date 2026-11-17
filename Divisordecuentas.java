@@ -31,14 +31,12 @@ public class Divisordecuentas {
             cantidadAlimentos = input.nextInt();
         }
 
-        int producto = 1; //Usar en for loop
-
         double subtotal = 0.0; //resultado del primer for loop (precio sin impuestos)
         
         for(int i = 1; i <= cantidadAlimentos; i++){
             double precio = 0.0;
 
-            System.out.println("Precio del producto " + producto + ": ");
+            System.out.println("Precio del producto " + i + ": ");
             precio = input.nextDouble() + precio;
 
             while(precio < 0){//Verifica que el precio no sea negativo
@@ -48,8 +46,6 @@ public class Divisordecuentas {
             }
 
             subtotal += precio;
-
-            producto++;
         }
 
         double total = impuestos(subtotal, IVA, SERVICIO);//Llamar al metodo impuestos
