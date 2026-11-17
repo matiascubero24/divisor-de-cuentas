@@ -17,7 +17,7 @@ public class Divisordecuentas {
         int personas = input.nextInt();
 
         while(personas <= 0){//Verifica que el valor de personas sea mayor a 0
-            System.out.println("Cantidad de personas no puede ser 0.");
+            System.out.println("Cantidad de personas no puede ser 0 o menor.");
             System.out.println("Vuelve a intentarlo: ");
             personas = input.nextInt();
         }
@@ -26,7 +26,7 @@ public class Divisordecuentas {
         int cantidadAlimentos = input.nextInt();
 
         while(cantidadAlimentos <= 0){//Verifica que el valor de cantidadAlimentos sea mayor a 0
-            System.out.println("Cantidad de alimentos no puede ser 0.");
+            System.out.println("Cantidad de alimentos no puede ser 0 o menos.");
             System.out.println("Vuelve a intentarlo: ");
             cantidadAlimentos = input.nextInt();
         }
