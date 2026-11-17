@@ -66,4 +66,6 @@ Precio del producto 3:
 
 ## Autor
 
-Matías ([@matiascubero24](https://github.com/matiascubero24)), como proyecto de práctica de AP Computer Science A.
+Matías Cubero ([@matiascubero24](https://github.com/matiascubero24))
+
+Mi primer proyecto personal usando GitHub, VS Code, Java y HTML.
