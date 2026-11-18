@@ -4,6 +4,8 @@ import java.io.IOException;
 import com.sun.net.httpserver.HttpExchange;
 import java.io.OutputStream;
 import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
 
 public class ServidorWeb {
     public static void main (String [] args) throws IOException{
@@ -24,6 +26,7 @@ public class ServidorWeb {
     }
 
     public static void mostrarPagina(HttpExchange intercambio) throws IOException{
-        responder(intercambio, "<h1>Hola</h1>");
+        String html = Files.readString(Path.of("index.html"));
+        responder(intercambio, html);
     }
 }
